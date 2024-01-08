@@ -1,0 +1,474 @@
+/* Réinitialisation de certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base pour le body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    background: #333; /* Un peu plus clair que le fond noir */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff9800; /* Couleur pour le nom du site, ici en orange */
+}
+
+/* Barre de navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Affiche les liens de navigation sur une ligne */
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Liens en blanc */
+}
+
+nav a:hover {
+    color: #ff9800; /* Couleur au survol, ici en orange */
+}
+
+/* Section d'introduction */
+.intro {
+    height: 50vh; /* Hauteur de la section */
+    display: flex;
+    flex-direction: column; /* Organise les enfants verticalement */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    text-align: center;
+}
+
+/* Titre dans la section .intro */
+.intro h2 {
+    font-size: 2rem; /* Taille du titre */
+    margin-bottom: 1rem; /* Ajoute de l'espace en dessous du titre */
+    color: #ff9800; /* Couleur pour le titre, ajustez selon le thème */
+}
+
+
+/* Style pour l'image dans la section .intro */
+/* Style pour l'image dans la section .intro */
+.intro-image {
+    max-width: 100%; /* Assurez-vous que l'image s'adapte à la largeur de la section */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 10px; /* Bords arrondis pour l'image si nécessaire */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    display: block; /* Assurez-vous que l'image est un élément de bloc */
+    width: 40%; /* Réduisez la largeur de l'image à 40% (ajustez selon vos besoins) */
+}
+
+
+
+
+
+/* Paragraphe dans la section .intro */
+.intro p {
+    font-size: 1.25rem; /* Taille du texte */
+    margin-top: 0; /* Supprime la marge au-dessus du paragraphe */
+    padding: 0.5rem; /* Espace intérieur pour la lisibilité */
+}
+
+/* Section 'Notre Mission' */
+/* Style pour la section 'Notre Mission' */
+.about {
+    background-color: #000; /* Couleur de fond noire */
+    padding: 2rem;
+    color: #fff; /* Texte en blanc */
+    text-align: center;
+}
+
+
+/* Titre de la section 'Notre Mission' */
+.about h2 {
+    font-size: 2rem; /* Taille du titre */
+    margin-bottom: 1rem; /* Espacement en dessous du titre */
+    color: #ff9800; /* Couleur du titre, peut-être la même que celle du header pour la cohérence */
+}
+
+/* Paragraphes de la section 'Notre Mission' */
+.about p {
+    font-size: 1.25rem; /* Taille du texte du paragraphe */
+    margin-top: 1rem; /* Espacement au-dessus du paragraphe */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+
+/* Mettre en évidence le système de notation */
+.rating-system {
+    font-weight: bold; /* Texte en gras pour attirer l'attention */
+    color: #ff9800; /* Couleur orange pour le système de notation */
+}
+
+/* Style pour les valeurs de notation (6/10 à 10/10) */
+.rating-value {
+    font-size: 1.5rem; /* Taille du texte des valeurs de notation */
+    color: #ff9800; /* Couleur orange pour les valeurs de notation */
+    margin-top: 0.5rem; /* Espacement au-dessus des valeurs de notation */
+}
+
+/* Style pour le texte de l'échelle de notation */
+.rating-text {
+    font-size: 1rem; /* Taille du texte de l'échelle de notation */
+    color: #ccc; /* Couleur grise pour le texte de l'échelle de notation */
+    margin-top: 0.5rem; /* Espacement au-dessus du texte de l'échelle de notation */
+}
+
+
+main {
+    flex: 1;
+}
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* Styles existants ... */
+
+/* Styles pour la liste des produits */
+.products {
+    padding: 2rem; /* Espacement autour de la section principale */
+    text-align: center; /* Centrage du texte */
+}
+
+.products h2 {
+    font-size: 2.5rem; /* Taille du titre des produits */
+    color: #ff9800; /* Couleur du titre */
+    margin-bottom: 2rem; /* Espacement en dessous du titre */
+}
+
+.product-list {
+    display: flex; /* Utilisation de Flexbox pour un agencement en grille */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+    justify-content: center; /* Centrage des produits */
+    gap: 1rem; /* Espacement entre les produits */
+}
+
+.product {
+    background-color: #333; /* Fond pour chaque produit */
+    padding: 1rem; /* Espacement intérieur */
+    border-radius: 10px; /* Bords arrondis */
+    width: 300px; /* Largeur fixe pour chaque produit */
+    margin-bottom: 2rem; /* Espacement en dessous de chaque produit */
+}
+
+.product img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas du conteneur */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 10px; /* Bords arrondis pour l'image */
+}
+
+.product h3 {
+    font-size: 1.5rem; /* Taille du nom du produit */
+    margin: 1rem 0; /* Espacement autour du nom du produit */
+    color: #ff9800; /* Couleur du nom du produit */
+}
+
+.product p {
+    font-size: 1rem; /* Taille de la description */
+    margin-bottom: 1rem; /* Espacement en dessous de la description */
+}
+
+.product .price {
+    font-size: 1.25rem; /* Taille du prix */
+    font-weight: bold; /* Rend le prix plus visible */
+    margin-bottom: 1rem; /* Espacement en dessous du prix */
+}
+
+.product button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Bords arrondis pour le bouton */
+}
+
+.product button:hover {
+    background-color: #e68a00; /* Changement de couleur au survol */
+}
+
+/* Styles pour le message de confirmation */
+.message {
+    color: green;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+/* Styles existants ... */
+
+/* Styles pour les articles du panier */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item {
+    background-color: #444; /* Fond plus clair pour chaque article */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet 3D */
+    display: flex;
+    align-items: center;
+    width: 80%; /* Largeur adaptée à la taille de l'écran */
+    max-width: 600px; /* Maximum width */
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.cart-item img {
+    max-width: 100px; /* Taille de l'image */
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.cart-item h3 {
+    font-size: 1.2rem;
+    color: #ff9800; /* Couleur du titre pour correspondre au style du site */
+    flex-grow: 1; /* Permet au titre de prendre l'espace disponible */
+}
+
+.cart-item p {
+    font-size: 0.9rem;
+    color: #ccc; /* Couleur subtile pour la description */
+}
+
+.cart-item .price {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.cart-item button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #e68a00; /* Changement de couleur au survol */
+}
+
+/* Message de confirmation ou d'erreur */
+.message {
+    color: green; /* Couleur pour les messages positifs */
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+/* Styles pour le titre du panier */
+h2 {
+    font-size: 2.5rem; /* Taille plus grande pour le titre */
+    color: #ff9800; /* Couleur pour correspondre au thème du site */
+    text-align: center; /* Centrage du texte */
+    margin: 2rem 0; /* Espacement au-dessus et en dessous */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour un effet en relief */
+}
+/* Styles spécifiques aux formulaires d'authentification */
+.auth-form {
+    background-color: #333; /* Fond pour le formulaire */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    width: 100%;
+    max-width: 400px; /* Largeur maximale */
+    margin: 2rem auto; /* Centrage et espacement */
+    text-align: center;
+}
+
+.auth-form h2 {
+    color: #ff9800;
+    margin-bottom: 1rem;
+}
+
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form input[type="text"], .auth-form input[type="password"] {
+    width: 90%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+
+.auth-form button {
+    padding: 0.75rem;
+    width: 90%;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: #e68a00;
+}
+
+/* Message d'erreur ou de confirmation */
+.message {
+    color: green;
+    margin-bottom: 1rem;
+}
+
+/* Styles spécifiques pour la page de paiement (paiement.php) */
+
+/* Styles spécifiques à la page de paiement */
+.payment-page {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    margin-bottom: 3rem; /* Ajoute une marge basse pour éviter le chevauchement avec le footer */
+}
+
+
+.payment-page h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 1rem;
+}
+
+.payment-page label {
+    display: block;
+    margin-top: 1rem;
+    color: #ff9800;
+}
+
+.payment-page input[type="text"],
+.payment-page input[type="tel"],
+.payment-page input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+
+.payment-page input[type="text"]:focus,
+.payment-page input[type="tel"]:focus,
+.payment-page input[type="email"]:focus {
+    outline: none;
+    border-color: #ff9800;
+}
+
+.payment-page input[type="text"]:hover,
+.payment-page input[type="tel"]:hover,
+.payment-page input[type="email"]:hover {
+    border-color: #ff9800;
+}
+
+.payment-page input[type="text"]:invalid,
+.payment-page input[type="tel"]:invalid,
+.payment-page input[type="email"]:invalid {
+    border-color: red;
+}
+
+.payment-page input[type="text"]:valid,
+.payment-page input[type="tel"]:valid,
+.payment-page input[type="email"]:valid {
+    border-color: green;
+}
+
+.payment-page input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+
+.payment-page input[type="password"]:focus {
+    outline: none;
+    border-color: #ff9800;
+}
+
+.payment-page input[type="password"]:hover {
+    border-color: #ff9800;
+}
+
+.payment-page input[type="password"]:invalid {
+    border-color: red;
+}
+
+.payment-page input[type="password"]:valid {
+    border-color: green;
+}
+
+.payment-page button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.payment-page button:hover {
+    background-color: #e68a00;
+}
+
+.payment-page .message {
+    color: green;
+    margin: 1rem 0;
+}
+
+/* Style du bouton de paiement */
+#payment-button {
+    background-color: #e68a00; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 5px; /* Arrondi les coins du bouton */
+    cursor: pointer; /* Curseur de type main pour indiquer que c'est un bouton cliquable */
+    font-size: 16px; /* Taille de la police du texte */
+}
+
+/* Style du bouton au survol */
+#payment-button:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+
+
